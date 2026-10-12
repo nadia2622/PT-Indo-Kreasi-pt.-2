@@ -1,0 +1,6 @@
+{
+  "name": "PT Indo Kreasi — Game Development Studio",
+  "description": "Website resmi PT Indo Kreasi, studio game development independen dengan fokus pada pixel art berkualitas tinggi, visual storytelling retro, dan gameplay inovatif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

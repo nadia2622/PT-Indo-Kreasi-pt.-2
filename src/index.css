@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-obsidian: #080808;
+    --color-obsidian-surface: #100f13;
+    --color-obsidian-card: #16121a;
+    --color-maroon: #5B0E2D;
+    --color-maroon-dark: #3A091D;
+    --color-maroon-light: #7A143D;
+    --color-crimson: #800020;
+    --color-crimson-bright: #9E0028;
+    --color-offwhite: #F2E9E4;
+    --color-muted: #A39B95;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-obsidian);
+    color: var(--color-offwhite);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-pixel {
+    font-family: 'Silkscreen', monospace;
+  }
+
+  .font-retro {
+    font-family: 'Press Start 2P', monospace;
+  }
+}
+
+/* Authentic Pixel Art Borders & Components */
+.pixel-border {
+  border: 2px solid #5B0E2D;
+  box-shadow: 
+    0 -2px 0 0 #5B0E2D,
+    0 2px 0 0 #5B0E2D,
+    -2px 0 0 0 #5B0E2D,
+    2px 0 0 0 #5B0E2D;
+}
+
+.pixel-border-crimson {
+  border: 2px solid #800020;
+  box-shadow: 
+    0 -2px 0 0 #800020,
+    0 2px 0 0 #800020,
+    -2px 0 0 0 #800020,
+    2px 0 0 0 #800020;
+}
+
+.pixel-card {
+  background-color: #120d14;
+  border: 2px solid #3A091D;
+  position: relative;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pixel-card:hover {
+  border-color: #800020;
+  box-shadow: 0 0 16px rgba(128, 0, 32, 0.35);
+}
+
+.pixel-btn-primary {
+  background-color: #800020;
+  color: #F2E9E4;
+  font-family: 'Silkscreen', monospace;
+  position: relative;
+  border: 2px solid #9E0028;
+  box-shadow: 
+    inset -2px -2px 0 0 #3A091D,
+    inset 2px 2px 0 0 #FF4D79,
+    0 4px 0 0 #3A091D;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.pixel-btn-primary:hover {
+  background-color: #9E0028;
+}
+
+.pixel-btn-primary:active {
+  transform: translateY(3px);
+  box-shadow: 
+    inset -2px -2px 0 0 #3A091D,
+    inset 2px 2px 0 0 #FF4D79,
+    0 1px 0 0 #3A091D;
+}
+
+.pixel-btn-secondary {
+  background-color: #17111b;
+  color: #F2E9E4;
+  font-family: 'Silkscreen', monospace;
+  border: 2px solid #5B0E2D;
+  box-shadow: 
+    inset -2px -2px 0 0 #080808,
+    inset 2px 2px 0 0 #7A143D,
+    0 4px 0 0 #080808;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, border-color 0.15s ease;
+}
+
+.pixel-btn-secondary:hover {
+  background-color: #231627;
+  border-color: #800020;
+}
+
+.pixel-btn-secondary:active {
+  transform: translateY(3px);
+  box-shadow: 
+    inset -2px -2px 0 0 #080808,
+    inset 2px 2px 0 0 #7A143D,
+    0 1px 0 0 #080808;
+}
+
+/* Subtle Retro Grid Background */
+.pixel-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(91, 14, 45, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(91, 14, 45, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Scanline Effect Overlay (Togglable) */
+.scanlines-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Pixel Art Decorative Corners */
+.pixel-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #800020;
+}
+
+.pixel-corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #800020;
+}
+
+.pixel-corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #800020;
+}
+
+.pixel-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #800020;
+}
+
